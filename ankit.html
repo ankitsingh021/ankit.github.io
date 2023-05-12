@@ -1,67 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Finance Website Template</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Finance Website</title>
+   
 </head>
+  <style>
+/* Basic styles */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav li {
+    margin-left: 1em;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    margin: 2em;
+}
+
+section {
+    margin-bottom: 2em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+ul {
+    list-style: disc;
+}
+
+form label {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+form input,
+form textarea {
+    display: block;
+    margin-bottom: 1em;
+    width: 100%;
+}
+
+form button {
+    background-color: #333;
+    border: none;
+    color: #fff;
+    padding: 1em;
+}
+</style>
 <body>
-  <header>
-    <h1>Finance Website</h1>
-    <nav>
-      <a href="#">Home</a>
-      <a href="#">About Us</a>
-      <a href="#">Services</a>
-      <a href="#">Contact Us</a>
-    </nav>
-  </header>
-  <main>
-    <section id="home">
-      <h2>Welcome to our finance website</h2>
-      <p>We are a financial services company that provides a variety of services to our clients, including investment advice, retirement planning, and estate planning. We are committed to helping our clients achieve their financial goals.</p>
-      <a href="#">Learn More</a>
-    </section>
-    <section id="about-us">
-      <h2>About Us</h2>
-      <p>We are a team of experienced financial professionals who are passionate about helping our clients achieve their financial goals. We have a deep understanding of the financial markets and we are committed to providing our clients with the best possible advice.</p>
-      <p>We offer a variety of services to our clients, including:</p>
-      <ul>
-        <li>Investment advice</li>
-        <li>Retirement planning</li>
-        <li>Estate planning</li>
-        <li>Tax planning</li>
-        <li>Insurance</li>
-      </ul>
-      <p>We are committed to providing our clients with the highest level of service. We are available to answer your questions and help you make the best financial decisions for your future.</p>
-      <a href="#">Contact Us</a>
-    </section>
-    <section id="services">
-      <h2>Our Services</h2>
-      <p>We offer a variety of services to our clients, including:</p>
-      <ul>
-        <li>Investment advice</li>
-        <li>Retirement planning</li>
-        <li>Estate planning</li>
-        <li>Tax planning</li>
-        <li>Insurance</li>
-      </ul>
-      <p>We are committed to providing our clients with the highest level of service. We are available to answer your questions and help you make the best financial decisions for your future.</p>
-      <a href="#">Learn More</a>
-    </section>
-    <section id="contact-us">
-      <h2>Contact Us</h2>
-      <p>We would love to hear from you. Please contact us today to schedule a consultation.</p>
-      <form action="#">
-        <input type="text" name="name" placeholder="Your Name">
-        <input type="email" name="email" placeholder="Your Email">
-        <input type="text" name="message" placeholder="Your Message">
-        <input type="submit" value="Submit">
-      </form>
-    </section>
-  </main>
-  <footer>
-    <p>Copyright &copy; 2023 Finance Website</p>
-  </footer>
+    <header>
+        <h1>Finance Website</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>About Us</h2>
+            <p>We are a finance company specializing in personal and small business loans. Our mission is to provide our clients with the best financial solutions to meet their needs.</p>
+        </section>
+        <section>
+            <h2>Our Services</h2>
+            <ul>
+                <li>Personal Loans</li>
+                <li>Small Business Loans</li>
+                <li>Investment Management</li>
+                <li>Retirement Planning</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Contact Us</h2>
+            <p>Feel free to reach out to us for any financial inquiries or questions. We are here to help you.</p>
+            <form action="#">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email">
+                <label for="message">Message</label>
+                <textarea id="message" name="message"></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Finance Website</p>
+    </footer>
 </body>
 </html>
